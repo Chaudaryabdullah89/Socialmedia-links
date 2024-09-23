@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redesigned Page</title>
+    <title>Social Media Links</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/d5/b0/4c/d5b04cc3dcd8c17702549ebc5f1acf1a.jpg">
+
+
+
     <style>
         @keyframes slideIn {
             0% {
@@ -33,11 +38,17 @@
     <div class="w-full max-w-3xl p-6 bg-white rounded-lg shadow-lg transform transition-all hover:scale-105 duration-500 ease-in-out slide-in">
         <!-- Profile Section -->
 
-        <div class="flex flex-col items-center mb-8">
+        <div class="relative flex flex-col items-center mb-8 cursor-pointer group" onclick="window.location.href='https://chabdullah-dev.netlify.app/'">
             <img src="https://chabdullah-dev.netlify.app/img/standing.jpg" alt="Your Name"
                 class="w-40 h-40 rounded-full object-cover shadow-lg mb-4 fade-in">
             <h1 class="font-bold text-4xl text-gray-800 mb-2 slide-in">Ch Abdullah</h1>
             <p class="text-lg text-gray-500">Frontend Developer & Designer</p>
+            
+            <!-- Tooltip -->
+            <div class="absolute bottom-0 flex flex-col items-center mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="w-3 h-3 -mb-2 rotate-45 bg-gray-800"></div>
+                <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-nowrap bg-gray-800 shadow-lg">Visit Portfolio</span>
+            </div>
         </div>
 
         <!-- Social Media Links Section -->
